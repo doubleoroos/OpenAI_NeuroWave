@@ -2,10 +2,10 @@ import matplotlib.pyplot as plt
 import numpy as np
 import os
 
-# Zorg dat output map bestaat
+# Zorg dat de outputmap bestaat
 os.makedirs("output", exist_ok=True)
 
-# Genereer een eenvoudige plot
+# Genereer een eenvoudige sinus-plot
 x = np.linspace(0, 2 * np.pi, 100)
 y = np.sin(x)
 plt.plot(x, y)
