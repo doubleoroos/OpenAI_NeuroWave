@@ -22,8 +22,10 @@ export HF_TOKEN=hf_your_token_here
 bash demo/run_demo.sh           # online (HF Router)
 # or fully offline (no token needed):
 bash demo/run_demo_offline.sh
-
-## CI/CD Workflow & Artifact Example
+```
+git add README.md
+git commit -m "Fix code block in Quick Start section"
+git push
 
 This repository uses a GitHub Actions workflow to automatically run a Python script and upload artifacts (such as plots) for every push or pull request to the `main` branch.
 
