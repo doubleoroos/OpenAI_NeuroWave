@@ -5,7 +5,7 @@ What if AI didn’t need a keyboard, a screen, or even a computer but could inte
 See Devpost for full details.
 
 ## Elevator Pitch
-**NeuroWave turns the human body into the interface — translating measurable biological signals into AI-driven insight, no computer required.**
+**NeuroWave turns the human body into the interface, translating measurable biological signals into AI-driven insight, no computer required.**
 
 ## How We Used gpt-oss
 - Input: Evidence JSON (`max_R`, `portal window`, `frequency`, `dt`).
