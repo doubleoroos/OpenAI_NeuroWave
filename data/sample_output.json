@@ -1,8 +1,8 @@
 {
-  "seed": 11,
-  "freqs": [0.6, 2.4],
-  "gamma": 0.9,
-  "steps": 1200,
+  "start_idx": 160,
+  "end_idx": 410,
+  "R_max": 0.74,
   "dt": 0.02
 }
+
 
