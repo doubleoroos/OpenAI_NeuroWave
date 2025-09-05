@@ -1,19 +1,20 @@
 import matplotlib.pyplot as plt
+import numpy as np
 import os
 
 # Zorg dat output map bestaat
 os.makedirs("output", exist_ok=True)
 
-# Maak een eenvoudige plot
-x = [1, 2, 3, 4, 5]
-y = [i**2 for i in x]
-plt.figure()
-plt.plot(x, y, marker='o')
-plt.title("Voorbeeldplot")
-plt.xlabel("x")
-plt.ylabel("x^2")
+# Genereer een eenvoudige plot
+x = np.linspace(0, 2 * np.pi, 100)
+y = np.sin(x)
+plt.plot(x, y)
+plt.title('Sample Sine Wave')
+plt.xlabel('X-axis')
+plt.ylabel('Y-axis')
 
-# Sla op als artifact
-plt.savefig("R_plot.png")
-plt.savefig("output/R_plot.png")
+# Sla op in hoofdmap en in output/
+plt.savefig('R_plot.png')
+plt.savefig('output/R_plot.png')
+plt.close()
 print("Plot opgeslagen als R_plot.png en output/R_plot.png")
