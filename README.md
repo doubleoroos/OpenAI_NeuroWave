@@ -1,31 +1,38 @@
 # OpenAI_NeuroWave
-What if AI didn’t need a keyboard, a screen, or even a computer but could interface directly with the biological signals of the human body?
-# NeuroWave — Quickstart
 
-See Devpost for full details.
+What if AI didn’t need a keyboard, a screen, or even a computer, but could interface directly with the biological signals of the human body?
+
+## NeuroWave — Quickstart
+
+See our [Devpost](#) for full details.
 
 ## Elevator Pitch
-**NeuroWave turns the human body into the interface, translating measurable biological signals into AI-driven insight, no computer required.**
+
+**NeuroWave turns the human body into the interface, translating measurable biological signals into AI-driven insights—no computer required.**
 
 ## How We Used gpt-oss
-- Input: Evidence JSON (`max_R`, `portal window`, `frequency`, `dt`).
-- Model: `openai/gpt-oss-120b` via Hugging Face Router.
-- Output: Deterministic analysis + next-parameter suggestion (JSON).
+
+- **Input:** Evidence JSON (`max_R`, `portal window`, `frequency`, `dt`)
+- **Model:** `openai/gpt-oss-120b` via Hugging Face Router
+- **Output:** Deterministic analysis + next-parameter suggestion (JSON)
 
 ## Built With
+
 Python, NumPy, Matplotlib, OpenAI gpt-oss-120b, Hugging Face Router API, JSON, Three.js, Local GPU Deployment, GitHub
 
 ## Quick Start
+
+To get started with NeuroWave:
+
 ```bash
 pip install -r requirements.txt
 export HF_TOKEN=hf_your_token_here
-bash demo/run_demo.sh           # online (HF Router)
-# or fully offline (no token needed):
+bash demo/run_demo.sh           # Online (HF Router)
+# Or fully offline (no token needed):
 bash demo/run_demo_offline.sh
 ```
-git add README.md
-git commit -m "Fix code block in Quick Start section"
-git push
+
+## CI/CD Workflow & Artifact Example
 
 This repository uses a GitHub Actions workflow to automatically run a Python script and upload artifacts (such as plots) for every push or pull request to the `main` branch.
 
@@ -54,3 +61,15 @@ To run the script yourself:
 ---
 
 *See `.github/workflows/ci.yml` for workflow details.*
+
+---
+
+## Contributing
+
+To update the README.md or contribute:
+
+```bash
+git add README.md
+git commit -m "Update README.md"
+git push
+```
